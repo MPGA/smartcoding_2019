@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html1>
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Sollentuna Kommun</title>
+    
+</head>
+
+<style>
+
+    
+    body,html {
+        height: 700px;
+        margin: 0;
+        font-family: Helvetica,Arial,sans-serif;
+    }
+
+    header{
+        background-color: #f1f1f1;
+        padding: 30px;
+        text-align: center;
+        font-size 35px;
+        color: #4c4c48; 
+}
+
+    .tablink { 
+        background-color:#333;
+        color: white;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 17px 26px;
+        font-size: 17px;
+        width: 25%;
+
+    }
+  
+
+.tablink:hover {
+    background-color: #777;
+    }
+    
+
+
+.tabcontent {
+    color: white;
+    display:none;
+    width: 95%;
+    padding: 100px 20px;
+    height: 100%;
+}
+
+#landpage {
+  background-color: #f9d154;
+  text-align: center;
+  color: white;
+  font-size: 50px;
+  height: 200px;
+  padding: 200px;
+
+}
+
+aside {
+  background-color: #DFDFDF;
+  color: black;
+  margin: .5px 30px;
+  float: left;
+  width: 40%;
+  padding:40px;
+
+}
+
+iframe {
+background-color: white;
+ margin: 20px 40px;
+}
+
+table, th, td {
+  background-color: white;
+  font-size: 20px;
+  color: black;
+  font-family: Arial;
+  padding: 4px 8px;
+  text-align: left;
+  border-collapse: collapse;
+}
+
+#History {background-color: #f9d154}
+#PointsofInterest {background-color: #ce48e5}
+#Territory {background-color: #f4873d}
+#ReportanIssue {background-color:#6182e0}
+
+
+
+footer {
+        background-color: #d8d853;
+        height: 50px;
+        margin-top:20px ;
+        text-align: center;
+        padding:10px;
+        color:white;
+    }
+
+</style>
+
+
+    <body>
+
+<header>
+    <h2>Sollentuna Kommun</h2>
+</header>
+
+
+
+            <button class="tablink" onclick="openPage('History', this, '#f9d154');document.getElementById('landpage').style.display = 'none'">History</button>
+            <button class="tablink" onclick="openPage('PointsofInterest', this, '#ce48e5');document.getElementById('landpage').style.display = 'none'">Point of Interest</button>
+            <button class="tablink" onclick="openPage('Territory', this, '#f4873d');document.getElementById('landpage').style.display = 'none'">Territory</button>
+            <button class="tablink" onclick="openPage('ReportanIssue', this, '#6182e0');document.getElementById('landpage').style.display = 'none'">Report an Issue</button>
+           
+            <div id="History" class="tabcontent">
+                    <h3>Know your municipality</h3>
+                    <aside>
+                      <h1>History of Sollentuna</h1>
+
+                    
+                    <p style="text-align:justify">Sollentuna municipality was founded in conjunction with the reform of local government in Sweden in 1863. 
+                        However, its boundaries are almost equivalent to those of Sollentuna Parish,which dates back to the 12th century. 
+                        Well into the 20th century, Sollentuna was a predominantly rural area.
+
+                        Modern Sollentuna evolved around the railway between Uppsala and Stockholm, inaugurated in 1866. 
+                        Five of the eight districts that make up the municipality today correspond to railway stations, now operated by Stockholm commuter rail system. 
+                        From south to north: Helenelund, Tureberg (railway station is Sollentuna Station), Häggvik, Norrviken and Rotebro. 
+                        Viby is an extension of Norrviken and the two remaining districts— Edsberg and Sjöberg—are found along the road to Danderyd. Other roads into Sollentuna includes the road from Kallhäll to Rotebro and the E 4 motorway that approximates the same route as the railway.
+                            
+                        Sollentuna received the title of a merchant town (köping) in 1944. Köping status was made obsolete by the municipal reform of 1971.</p>
+                      </aside>
+                      <img src="/Users/monicagandino/Documents/smartcoding/sollentuna.JPG" width="450" height="500" >
+            </div>
+            
+                  
+                  <div id="PointsofInterest" class="tabcontent">
+          
+                    <h3>Sollentuna Map</h3>
+                    <p>The map of Solletuna Kommun will provide you with information on points of interest in the area. Click and Enjoy!</p> 
+                    <iframe name="map" src="sollentuna_map/map.html" width="900" height="600" frameborder="0" scrolling="auto" class="frame-area">
+                    </iframe>
+                      
+                      
+          
+                  </div>
+                  
+                  <div id="Territory" class="tabcontent">
+                      <p>Facts about the territory and demographics of Sollentuna Kommun</p>
+                      <table style="display: inline-block; border: 1px solid"; float: left; >
+                      
+                      <tr>
+                        <th>Region</th>
+                        <th>Svealand</th>
+                      </tr>
+
+                      <tr>
+                        <th>Province</th>
+                        <th>Stockholm</th>
+                      </tr>
+
+                      <tr>
+                        <th>Surface (Km2)</th>
+                        <th>58,33</th>
+                      </tr>
+
+                      <tr>
+                        <th>Population Density</th>
+                        <th>1,243.4</th>
+                      </tr>
+                    </table>
+
+                    <table style="display: inline-block; border: 1px solid; ">
+                        <tr>
+                            <th>Inhabitants</th>
+                            <th>72,528</th>
+                          </tr>
+    
+                          <tr>
+                            <th>Families</th>
+                            <th>28,976</th>
+                          </tr>
+    
+                          <tr>
+                            <th>Males(%)</th>
+                            <th>50,2</th>
+                          </tr>
+    
+                          <tr>
+                            <th>Females(%)</th>
+                            <th>49,8</th>
+                          </tr>
+
+                    </table>
+                  </div>
+
+                  <div id="ReportanIssue" class="tabcontent">
+                        <h3>Report an Issue</h3>
+                        <p>Get in touch with us, help us make our city better. Fill the form for suggestions ;)</p>
+                        <div style="padding-bottom: 18px;font-size : 24px;">Report An Issue</div>
+                    <div style="padding-bottom: 18px;">Reported by
+<span style="color: red;"> *
+</span><br/>
+<input type="text" id="data_2" name="data_2" style="width : 450px;" class="form-control"/>
+                     </div>
+
+                   <div style="padding-bottom: 18px;">Summary
+                    <span style="color: red;"> *</span><br/>
+                   <input type="text" id="data_6" name="data_6" style="width : 450px;" class="form-control"/>
+                    </div>
+                  <div style="padding-bottom: 18px;">Description<br/>
+                      <textarea id="data_7" false name="data_7" style="width : 450px;" rows="6" class="form-control"></textarea>
+                   </div>
+                  <div style="padding-bottom: 18px;"><input name="skip_Submit" value="Submit" type="submit"/></div>
+                   </div>  
+                    
+                 
+                       </div>
+
+<p id="landpage">"WELCOME TO SOLLENTUNA WEBSITE ; )</p>
+    
+<script>
+
+    function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+
+
+</script>
+
+<footer>
+    <p>Created by Monica Gandino</p>
+    </footer>
+
+
+    </body>
+</html1>
